@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CBSE Report Card</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="page-header">
+
+<h1>Chinmaya Vidyalaya Bokaro</h1>
+
+<p>CBSE Academic Report Card</p>
+
+</header>
+
+<section class="report-section">
+
+<div class="report-card">
+
+<h2>Academic Session : 2026-27</h2>
+
+<div class="student-info">
+
+<p><strong>Name :</strong> Rahul Kumar</p>
+<p><strong>Class :</strong> X-A</p>
+<p><strong>Roll No :</strong> 25</p>
+<p><strong>Admission No :</strong> CVB20261025</p>
+
+</div>
+
+<table id="marksTable">
+
+<tr>
+
+<th>Subject</th>
+<th>Marks</th>
+
+</tr>
+
+<tr>
+
+<td>English</td>
+<td><input type="number" class="mark" value="88"></td>
+
+</tr>
+
+<tr>
+
+<td>Hindi</td>
+<td><input type="number" class="mark" value="81"></td>
+
+</tr>
+
+<tr>
+
+<td>Mathematics</td>
+<td><input type="number" class="mark" value="95"></td>
+
+</tr>
+
+<tr>
+
+<td>Science</td>
+<td><input type="number" class="mark" value="91"></td>
+
+</tr>
+
+<tr>
+
+<td>Social Science</td>
+<td><input type="number" class="mark" value="89"></td>
+
+</tr>
+
+<tr>
+
+<td>Computer</td>
+<td><input type="number" class="mark" value="96"></td>
+
+</tr>
+
+</table>
+
+<div class="result-box">
+
+<h3>Total : <span id="total">0</span></h3>
+
+<h3>Percentage : <span id="percentage">0%</span></h3>
+
+<h3>Grade : <span id="grade">-</span></h3>
+
+</div>
+
+<button onclick="calculateResult()" class="portal-btn">
+
+Calculate Result
+
+</button>
+
+<button onclick="window.print()" class="portal-btn">
+
+Print Report Card
+
+</button>
+
+</div>
+
+</section>
+
+<script src="js/report.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admission Form</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="page-header">
+
+<h1>Chinmaya Vidyalaya Bokaro</h1>
+
+<p>Online Admission Form</p>
+
+</header>
+
+<section class="admission-form">
+
+<form id="admissionForm">
+
+<div class="row">
+
+<div class="input-box">
+<label>Student Name</label>
+<input type="text" required>
+</div>
+
+<div class="input-box">
+<label>Date of Birth</label>
+<input type="date" required>
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="input-box">
+<label>Father's Name</label>
+<input type="text" required>
+</div>
+
+<div class="input-box">
+<label>Mother's Name</label>
+<input type="text" required>
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="input-box">
+<label>Mobile Number</label>
+<input type="tel" required>
+</div>
+
+<div class="input-box">
+<label>Email</label>
+<input type="email">
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="input-box">
+<label>Class Applying For</label>
+
+<select required>
+
+<option>Select Class</option>
+
+<option>Nursery</option>
+<option>LKG</option>
+<option>UKG</option>
+
+<option>I</option>
+<option>II</option>
+<option>III</option>
+<option>IV</option>
+<option>V</option>
+
+<option>VI</option>
+<option>VII</option>
+<option>VIII</option>
+
+<option>IX</option>
+<option>X</option>
+
+<option>XI Science</option>
+<option>XI Commerce</option>
+
+</select>
+
+</div>
+
+<div class="input-box">
+
+<label>Gender</label>
+
+<select>
+
+<option>Male</option>
+
+<option>Female</option>
+
+<option>Other</option>
+
+</select>
+
+</div>
+
+</div>
+
+<div class="input-box">
+
+<label>Address</label>
+
+<textarea rows="4"></textarea>
+
+</div>
+
+<button class="submit-btn">
+
+Submit Admission Form
+
+</button>
+
+</form>
+
+</section>
+
+<script>
+
+document.getElementById("admissionForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("Admission Form Submitted Successfully!");
+
+});
+
+</script>
+
+</body>
+
+</html>

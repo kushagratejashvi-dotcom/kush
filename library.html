@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Library</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="page-header">
+
+<h1>Chinmaya Vidyalaya Bokaro</h1>
+
+<p>Digital Library</p>
+
+</header>
+
+<section class="library">
+
+<h2>Library Books</h2>
+
+<input type="text" id="searchBook" placeholder="Search Book..." onkeyup="searchBooks()">
+
+<div class="book-grid" id="bookGrid">
+
+<div class="book-card">
+📘
+<h3>Mathematics</h3>
+<p>Class X</p>
+<button>Read</button>
+</div>
+
+<div class="book-card">
+📗
+<h3>Science</h3>
+<p>Class X</p>
+<button>Read</button>
+</div>
+
+<div class="book-card">
+📕
+<h3>English</h3>
+<p>Class X</p>
+<button>Read</button>
+</div>
+
+<div class="book-card">
+📙
+<h3>Computer Science</h3>
+<p>Class X</p>
+<button>Read</button>
+</div>
+
+<div class="book-card">
+📓
+<h3>History</h3>
+<p>Class IX</p>
+<button>Read</button>
+</div>
+
+<div class="book-card">
+📔
+<h3>Geography</h3>
+<p>Class IX</p>
+<button>Read</button>
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+function searchBooks(){
+
+let input=document.getElementById("searchBook").value.toUpperCase();
+
+let books=document.getElementsByClassName("book-card");
+
+for(let i=0;i<books.length;i++){
+
+let title=books[i].getElementsByTagName("h3")[0];
+
+if(title.innerHTML.toUpperCase().indexOf(input)>-1){
+
+books[i].style.display="block";
+
+}else{
+
+books[i].style.display="none";
+
+}
+
+}
+
+}
+
+</script>
+
+</body>
+</html>

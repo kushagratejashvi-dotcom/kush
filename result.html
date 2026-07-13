@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Result Portal</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="page-header">
+
+<h1>Chinmaya Vidyalaya Bokaro</h1>
+
+<p>Student Result Portal</p>
+
+</header>
+
+<section class="result-search">
+
+<h2>Check Your Result</h2>
+
+<input type="text" id="roll" placeholder="Enter Roll Number">
+
+<button onclick="showResult()">Search Result</button>
+
+</section>
+
+<section id="resultCard" class="result-card" style="display:none;">
+
+<h2>Annual Examination Result</h2>
+
+<table class="result-table">
+
+<tr>
+
+<th>Subject</th>
+
+<th>Marks</th>
+
+</tr>
+
+<tr>
+
+<td>English</td>
+
+<td>91</td>
+
+</tr>
+
+<tr>
+
+<td>Mathematics</td>
+
+<td>95</td>
+
+</tr>
+
+<tr>
+
+<td>Science</td>
+
+<td>93</td>
+
+</tr>
+
+<tr>
+
+<td>Social Science</td>
+
+<td>90</td>
+
+</tr>
+
+<tr>
+
+<td>Computer</td>
+
+<td>99</td>
+
+</tr>
+
+<tr>
+
+<th>Total Percentage</th>
+
+<th>93.6%</th>
+
+</tr>
+
+<tr>
+
+<th>Grade</th>
+
+<th>A+</th>
+
+</tr>
+
+</table>
+
+</section>
+
+<script>
+
+function showResult(){
+
+let roll=document.getElementById("roll").value;
+
+if(roll==""){
+
+alert("Please Enter Roll Number");
+
+return;
+
+}
+
+document.getElementById("resultCard").style.display="block";
+
+}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+function searchStudent(){
+
+let input=document.getElementById("searchStudent").value.toUpperCase();
+
+let table=document.getElementById("studentTable");
+
+let tr=table.getElementsByTagName("tr");
+
+for(let i=1;i<tr.length;i++){
+
+let td=tr[i].getElementsByTagName("td")[1];
+
+if(td){
+
+let txt=td.textContent||td.innerText;
+
+if(txt.toUpperCase().indexOf(input)>-1){
+
+tr[i].style.display="";
+
+}else{
+
+tr[i].style.display="none";
+
+}
+
+}
+
+}
+
+}

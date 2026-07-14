@@ -42,16 +42,12 @@ font-weight:bold;
 }
 
 .hero{
-height:90vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-url("https://images.unsplash.com/photo-1509062522246-3755977927d7");
-background-size:cover;
-color:white;
-text-align:center;
+    width:100%;
+    min-height:100vh;
+    background:url("../images/school.jpg") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .hero h1{
@@ -3061,4 +3057,32 @@ text-align:center;
 
 color:#004aad;
 
+}
+body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    padding:15px 5%;
+}
+
+.nav-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.nav-links li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
 }

@@ -10,7 +10,7 @@ total+=Number(mark.value);
 
 });
 
-let percentage=(total/600)*100;
+let percentage=(total/500)*100;
 
 let grade="";
 
